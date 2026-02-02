@@ -1,0 +1,24 @@
+{
+    "name": "Java",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "remoteEnv": {
+      "DOCKER_API_VERSION": "1.43"
+    },
+    "features": {
+       "ghcr.io/devcontainers/features/java:1": {
+        "version": "21"
+      },
+      "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    },
+  
+    "customizations": {
+      "vscode": {
+        "settings": {"locale": "en"},
+        "extensions": [
+          "vmware.vscode-boot-dev-pack",
+          "eamodio.gitlens"
+        ]
+      }
+    },
+    "forwardPorts": [7471]
+  }
